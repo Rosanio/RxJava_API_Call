@@ -1,5 +1,6 @@
 package com.epicodus.rxjavaproject.view;
 
+import android.support.v4.app.FragmentManager;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
@@ -21,7 +22,7 @@ import rx.schedulers.Schedulers;
  * An activity which is considered the "main" of it's peers
  */
 
-public class MainActivity extends AppCompatActivity {
+public class MainActivity extends AppCompatActivity implements OnQuerySentListener {
 
     private Subscription mSubscription;
     private long mDt;
@@ -78,6 +79,12 @@ public class MainActivity extends AppCompatActivity {
                     }
                 });
 
+    }
+
+    @Override
+    public void sendQuery(String query) {
+        WeatherListFragment listFrag = (WeatherListFragment) getSupportFragmentManager().findFragmentById(R.id.weatherListFragment);
+        listFrag.getWeather(query);
     }
 
 

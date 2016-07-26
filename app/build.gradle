@@ -26,6 +26,9 @@ android {
     buildTypes.each {
         it.buildConfigField 'String', 'API_KEY', ApiKey
     }
+    packagingOptions {
+        exclude 'META-INF/services/javax.annotation.processing.Processor'
+    }
 }
 
 dependencies {
