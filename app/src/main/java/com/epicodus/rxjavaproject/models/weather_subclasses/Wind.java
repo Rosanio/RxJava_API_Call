@@ -1,4 +1,4 @@
-package com.epicodus.rxjavaproject.models;
+package com.epicodus.rxjavaproject.models.weather_subclasses;
 
 import com.google.gson.annotations.SerializedName;
 

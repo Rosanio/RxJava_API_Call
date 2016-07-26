@@ -1,0 +1,32 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context="com.epicodus.rxjavaproject.view.WeatherQueryFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="What&apos;s the Weather in...?"
+        android:id="@+id/titleTextView"
+        android:gravity="center"
+        android:textSize="30sp" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/cityEditText"
+        android:layout_below="@+id/titleTextView"
+        android:layout_centerHorizontal="true"
+        android:hint="Enter a City" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Go!"
+        android:id="@+id/queryButton"
+        android:layout_below="@+id/cityEditText"
+        android:layout_centerHorizontal="true" />
+</RelativeLayout>

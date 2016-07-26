@@ -1,4 +1,4 @@
-package com.epicodus.rxjavaproject;
+package com.epicodus.rxjavaproject.models;
 
 import com.epicodus.rxjavaproject.models.WeatherData;
 

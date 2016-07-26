@@ -7,10 +7,22 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context="com.epicodus.rxjavaproject.MainActivity">
+    tools:context=".view.MainActivity">
 
-    <TextView
-        android:layout_width="wrap_content"
+    <fragment
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Hello World!" />
+        android:id="@+id/weatherQueryFragment"
+        android:name="com.epicodus.rxjavaproject.view.WeatherQueryFragment"
+        tools:layout="@layout/fragment_weather_query"/>
+
+    <fragment
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/weatherListFragment"
+        android:name="com.epicodus.rxjavaproject.view.WeatherListFragment"
+        tools:layout="@layout/fragment_weather_list"
+        android:layout_below="@+id/weatherQueryFragment" />
+
+
 </RelativeLayout>

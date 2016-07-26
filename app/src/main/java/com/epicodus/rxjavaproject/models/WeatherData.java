@@ -1,5 +1,11 @@
 package com.epicodus.rxjavaproject.models;
 
+import com.epicodus.rxjavaproject.models.weather_subclasses.Clouds;
+import com.epicodus.rxjavaproject.models.weather_subclasses.Coord;
+import com.epicodus.rxjavaproject.models.weather_subclasses.Main;
+import com.epicodus.rxjavaproject.models.weather_subclasses.Sys;
+import com.epicodus.rxjavaproject.models.weather_subclasses.Weather;
+import com.epicodus.rxjavaproject.models.weather_subclasses.Wind;
 import com.google.gson.annotations.SerializedName;
 
 import java.util.List;
