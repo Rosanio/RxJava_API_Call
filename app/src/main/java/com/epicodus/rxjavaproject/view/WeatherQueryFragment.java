@@ -16,7 +16,7 @@ import butterknife.Bind;
 import butterknife.ButterKnife;
 
 /**
- * A simple {@link Fragment} subclass.
+ * This Fragment simply takes the users input and passes it to the MainActivity
  */
 public class WeatherQueryFragment extends Fragment implements View.OnClickListener {
 
